@@ -28,7 +28,7 @@ def prepare_output_file(output_file: str):
             return False
 
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write("domain,language,confidence\n")
+        f.write("domain,language\n")
     return True
 
 def process_url(url: str, lang: str, output_file=None):

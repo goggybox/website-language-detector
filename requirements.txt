@@ -1,0 +1,4 @@
+py3langid
+langid
+requests
+beautifulsoup4

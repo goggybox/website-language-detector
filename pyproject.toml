@@ -1,0 +1,18 @@
+[project]
+name = "website-language-detector"
+version = "0.1.0"
+description = "Uses BeautifulSoup and py3langid to scrape and identify the language of a given URL."
+authors = [{ name = "goggbybox" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "py3langid",
+    "beautifulsoup4",
+    "requests"
+]
+
+[project.scripts]
+web-lang = "website_language_detector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
